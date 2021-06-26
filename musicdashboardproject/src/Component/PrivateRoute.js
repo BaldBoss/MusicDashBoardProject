@@ -1,0 +1,18 @@
+import React from 'react'
+import { Route } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
+import { routes } from '../Routes/Routes'
+import { useAuth } from './context/AuthContext'
+export default function PrivateRoute({children, ...rest}) {
+    const{isLoggedIn} = useAuth()
+    return (
+        <Route
+        {...rest}
+        render={props =>{
+            return isLoggedIn ? children : <Redirect to={routes.Login}></Redirect>
+        }}
+        >
+
+        </Route>
+    )
+}

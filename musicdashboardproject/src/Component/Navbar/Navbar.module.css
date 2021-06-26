@@ -1,0 +1,32 @@
+.NavbarContainer {
+  width: 100px;
+  height: 100vh;
+  background-color: #373b53;
+}
+.NavbarButton {
+  width: 85px;
+  height: 54px;
+  border-radius: 6px 0px 0px 6px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.NavbarButton a {
+  display: block;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 14px 16px;
+  text-align: center;
+}
+.NavbarButton a:focus {
+  background-color: #f8f8fb;
+  border-radius: 6px 0px 0px 6px;
+}
+.NavbarButton a:focus > svg {
+  color: #0094b6;
+}
+.logoContainer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
