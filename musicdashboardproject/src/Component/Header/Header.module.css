@@ -25,3 +25,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.logout {
+  border-left: 3px solid rgb(88, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

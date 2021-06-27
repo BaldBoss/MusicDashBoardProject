@@ -2,16 +2,18 @@
 import React, { useRef, useState } from 'react'
 import {Form,Button,Card,Alert} from 'react-bootstrap'
 import { routes } from '../../Routes/Routes'
-import { useAuth } from '../context/AuthContext'
 import { Link,useHistory } from 'react-router-dom'
+import { AuthService } from '../../Service/AuthService'
+import { useDispatch } from 'react-redux'
+import { addUserData,login,logout } from '../../store/UserSlice/UserSlice'
 
 export default function Login() {
     const emailRef = useRef()
     const passwordRef = useRef()
-    const {login} = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()
+    const dispatch = useDispatch()
 
     async function handlesubmit(e){
         e.preventDefault()
@@ -20,7 +22,9 @@ export default function Login() {
         try{
             setError("")
             setLoading(true)
-            await login(emailRef.current.value, passwordRef.current.value)
+            const userData = await AuthService.login(emailRef.current.value,passwordRef.current.value)
+            dispatch(addUserData(emailRef.current.value))
+            dispatch(login())
             history.push(routes.home)
         }catch{
             setError("Failed to log in")

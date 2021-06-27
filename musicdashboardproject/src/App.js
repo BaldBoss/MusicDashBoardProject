@@ -12,16 +12,18 @@ import Dashboard from './Component/Dashboard/Dashboard';
 import Earning from './Component/Earning/Earning';
 import Chat from './Component/Chat/Chat';
 import Navbar from './Component/Navbar/Navbar';
-import { AuthContextProvider } from './Component/context/AuthContext';
 import Header from './Component/Header/Header';
 import "bootstrap/dist/css/bootstrap.min.css"
 import Signup from './Component/Signup/Signup';
 import {Container} from 'react-bootstrap'
 import Login from './Component/Login/Login';
 import PrivateRoute from './Component/PrivateRoute';
+import store from './store/store';
+import {Provider} from 'react-redux'
 function App() {
   return (
-    <AuthContextProvider>
+    <Provider store={store}>
+      
         <Router>
         <div className="d-flex">
           <Navbar></Navbar>
@@ -62,9 +64,9 @@ function App() {
           </div>
           
         </div>  
-      </Router>
-    </AuthContextProvider>
-    
+      </Router> 
+    </Provider>
+
   );
 }
 
