@@ -69,6 +69,9 @@ body {
   width: 870px;
   border-radius: 10px;
 }
+.thumbs-wrapper {
+  margin: 0 !important;
+}
 .carousel img {
   height: 467px;
 }
@@ -106,7 +109,7 @@ body {
   flex-direction: column;
   height: 467px;
   min-width: 80%;
-  background-color: #665f69;
+  background-color: #8c7fd4;
   opacity: 0.8;
   text-align: center;
   padding: 15px;
@@ -184,4 +187,108 @@ body {
   top: 0;
   left: 0;
   border-radius: 100%;
+}
+.app-root {
+}
+.Graph {
+  height: 375px;
+  background: #ffffff;
+  /* Tables */
+
+  box-shadow: 0px 3px 6px rgba(75, 81, 91, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.des {
+  width: 20px;
+  height: 20px;
+}
+.fanContainer {
+  padding: 20px;
+  border-bottom: 1px solid #c1c3c7;
+}
+.fanBox-Wrapper {
+  background: #ffffff;
+  /* Tables */
+
+  box-shadow: 0px 3px 6px rgba(75, 81, 91, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  height: 563px;
+  overflow: auto;
+}
+.fanBox-Wrapper::-webkit-scrollbar {
+  display: none;
+}
+.fanContainer h5 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.01em;
+
+  color: #2e3b52;
+}
+.fanContainer select {
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.01em;
+
+  color: #a6acbe;
+}
+.fanHourWrapper {
+  height: 100%;
+}
+
+.fanItem {
+  padding: 15px;
+  transition: all 0.2s ease-in;
+}
+.fanItem:hover {
+  background-color: rgb(71, 66, 66);
+  color: #fff;
+  border-radius: 10px;
+}
+.fanImgHolder {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: antiquewhite;
+}
+.fanHourWrapper h5 {
+  letter-spacing: 0.01em;
+
+  color: #a6acbe;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  margin-left: 10px;
+}
+.streamText {
+  padding: 20px;
+  border-bottom: 1px solid #c1c3c7;
+}
+.streamText h5 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.01em;
+
+  color: #2e3b52;
+}
+.Pie {
+  background: #ffffff;
+  /* Tables */
+
+  box-shadow: 0px 3px 6px rgba(75, 81, 91, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }

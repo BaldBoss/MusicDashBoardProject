@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import {useState } from "react"
 import { routes } from "../../Routes/Routes"
 import styles from "./Header.module.css"
 import { useHistory } from "react-router"
@@ -19,6 +19,7 @@ export default function Header(params) {
         
             AuthService.logout().then(() =>{
                 dispatch(logout())
+                localStorage.removeItem("userToken")
                 history.push(routes.Login)
             }).catch(()=>{
                 setError("failed to logout")

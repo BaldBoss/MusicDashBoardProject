@@ -1,0 +1,67 @@
+.newsBox {
+  width: 100%;
+  height: 136.38px;
+  background-image: url("../../../img/frame.png");
+  padding: 30px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: 0.5s ease;
+}
+.newsBox h4 {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 20.56px;
+  font-size: 14px;
+}
+.newsBox p {
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+@media (max-width: 1360px) {
+  .newsBox p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1222px) {
+  .newsBox p {
+    font-size: 10px;
+  }
+}
+.bg1 {
+  background-image: url("../../../img/frame1.png");
+}
+.bg2 {
+  background-image: url("../../../img/frame2.png");
+}
+.bg3 {
+  background-image: url("../../../img/fame3.jpg");
+  height: 136.38px;
+}
+.bg4 {
+  background-image: url("../../../img/fame4.jpg");
+}
+.hoverBox {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.newsBox:hover .hoverBox {
+  opacity: 0.5;
+}

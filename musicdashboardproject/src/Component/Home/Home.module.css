@@ -1,5 +1,6 @@
 .home {
-  background-color: #dae1ec;
+  background-color: #eff2f5;
+  flex: 1;
 }
 .searchbarContainer {
   padding: 30px;
@@ -14,6 +15,9 @@
   border-radius: 1.625rem;
   padding: 0 3.5rem 0 1.5rem;
   font-size: 1rem;
+  box-shadow: -4px 0px 47px -16px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: -4px 0px 47px -16px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: -4px 0px 47px -16px rgba(0, 0, 0, 0.72);
 }
 .searchbarContainer {
   width: 100%;

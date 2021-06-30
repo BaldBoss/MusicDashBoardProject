@@ -1,11 +1,11 @@
 
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import {Form,Button,Card,Alert} from 'react-bootstrap'
 import { routes } from '../../Routes/Routes'
 import { Link,useHistory } from 'react-router-dom'
 import { AuthService } from '../../Service/AuthService'
 import { useDispatch } from 'react-redux'
-import { addUserData,login,logout } from '../../store/UserSlice/UserSlice'
+import { addUserData,login} from '../../store/UserSlice/UserSlice'
 
 export default function Login() {
     const emailRef = useRef()
@@ -17,20 +17,35 @@ export default function Login() {
 
     async function handlesubmit(e){
         e.preventDefault()
-
-
         try{
             setError("")
             setLoading(true)
             const userData = await AuthService.login(emailRef.current.value,passwordRef.current.value)
             dispatch(addUserData(emailRef.current.value))
             dispatch(login())
+            console.log(userData.user.toJSON())
+            localStorage.setItem("userToken" , JSON.stringify(userData.user.toJSON()))
             history.push(routes.home)
         }catch{
             setError("Failed to log in")
-        }
-        setLoading(false)
+            setLoading(false)
+        }       
     }
+
+    useEffect(()=>{
+        const userTokenCheck = localStorage.getItem("userToken")
+        if(userTokenCheck){
+            const userToken = JSON.parse(userTokenCheck)
+            if(userToken.stsTokenManager.expirationTime > new Date())
+            {
+                dispatch(addUserData(userToken.email))
+                dispatch(login())
+                history.push(routes.home)
+            }
+        }
+       
+    },[])
+
 
     return (
         <>

@@ -7,7 +7,9 @@ import NextBtn from './Controller/NextBtn';
 import { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import audios from '../../static/audio';
-import Wave from '@foobar404/wave'
+import Wave from "@foobar404/wave"
+import News from './News/News';
+import Genre from './Genre/Genre';
 
 export default function Home(params) {
     const songRef = useRef(null)
@@ -99,7 +101,14 @@ export default function Home(params) {
                         </div>
                     </div>
                 </div>
-                something
+                <div className="row">
+                    <div className="col-m-12 col-lg-6 p3">
+                        <News></News>
+                    </div>
+                    <div className="col-m-12 col-lg-6 p3">
+                        <Genre></Genre>
+                    </div>
+                </div>
             </div>
             
         </div>

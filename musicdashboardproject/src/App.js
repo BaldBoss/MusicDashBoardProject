@@ -1,10 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import { routes } from './Routes/Routes';
 import Home from './Component/Home/Home';
@@ -25,9 +24,9 @@ function App() {
     <Provider store={store}>
       
         <Router>
-        <div className="d-flex">
+        <div className="d-flex app-root">
           <Navbar></Navbar>
-          <div className="Content">
+          <div className="Content d-flex flex-column">
               <Header></Header>
             <Switch>
               <PrivateRoute exact path={routes.home}>
