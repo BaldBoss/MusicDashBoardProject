@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-class Graph extends Component {
+class EarningAreaGraph extends Component {
   constructor(props) {
     super(props);
 
@@ -36,17 +36,22 @@ class Graph extends Component {
           tooltip:{
               enabled:false
           },
+          colors:['#C887EB', '#5E77FF'],
+          legend:{
+              show: false
+          },
           dataLabels: {
-            enabled:false
+              enabled: true,
+              enabledOnSeries: 3,
           }
       },
       series: [
         {
-          name: "Men",
-          data: [15, 10, 18, 5, 8, 20, 24, 17]
+          
+          data: [5000, 15000, 8000, 5000, 8000, 20000, 24345, 17000]
         },{
-            name: 'Woman',
-            data: [10, 24, 9, 16, 7, 3, 13,22]
+            
+            data: [5000, 8000, 9000, 16000, 7000, 3000, 13000,22000]
         }
       ]
     };
@@ -63,7 +68,7 @@ class Graph extends Component {
               series={this.state.series}
               type="area"
               width="100%"
-              height="400px"
+              height="375px"
             />
           </div>
         </div>
@@ -72,4 +77,4 @@ class Graph extends Component {
   }
 }
 
-export default Graph;
+export default EarningAreaGraph;

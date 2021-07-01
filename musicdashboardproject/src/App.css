@@ -292,3 +292,22 @@ body {
     0px 1px 3px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
+.map {
+  background: #ffffff;
+  /* Tables */
+
+  box-shadow: 0px 3px 6px rgba(75, 81, 91, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 100%;
+
+  position: relative;
+}
+.map_fit {
+  max-height: -webkit-fill-available;
+}
+.mapTitle {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}

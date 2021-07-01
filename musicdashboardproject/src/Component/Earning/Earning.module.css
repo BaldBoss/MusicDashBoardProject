@@ -1,0 +1,151 @@
+.earning {
+  background-color: #eff2f5;
+  flex: 1;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cog svg {
+  height: 30px;
+  width: 30px;
+}
+.cog {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #7d90b2;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.LastSeven {
+  border: 1px solid #7d90b2;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 118.22px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.LastSeven p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #7d90b2;
+  margin: 0;
+}
+.LastSeven svg {
+  width: 20px;
+  height: 20px;
+}
+.earning_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.csv svg {
+  width: 20px;
+  height: 20px;
+}
+.csv {
+  width: 168.4px;
+  height: 50px;
+  border: 1px solid #7d90b2;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #7d90b2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.csv p {
+  margin: 0;
+}
+.cog:hover,
+.LastSeven:hover,
+.csv:hover {
+  background-color: rgb(162, 216, 218);
+  color: #fff;
+}
+.ContentBox {
+  width: 100%;
+  height: 151px;
+  background: #ffffff;
+  /* Tables */
+
+  box-shadow: 0px 3px 6px rgba(75, 81, 91, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+
+  align-items: center;
+}
+.ContentBox_icon {
+  background: rgba(113, 59, 219, 0.05);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ContentBox_text h1 {
+  letter-spacing: 0.01em;
+
+  color: #2e3b52;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 24px;
+}
+.ContentBox_text h5 {
+  letter-spacing: 0.01em;
+
+  color: #a6acbe;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+.ContentBox_Wrapper {
+  width: 25%;
+  padding: 20px;
+}
+.green {
+  background: rgba(51, 214, 159, 0.07);
+}
+.red {
+  background: rgba(255, 76, 97, 0.05);
+}
+.blue {
+  background: rgba(76, 184, 255, 0.07);
+}
+.orange {
+  background: rgba(255, 184, 0, 0.07);
+}
+.earningGraph_Container {
+  padding: 20px;
+}
+.MapAndPayer_Container {
+  padding: 20px;
+}
