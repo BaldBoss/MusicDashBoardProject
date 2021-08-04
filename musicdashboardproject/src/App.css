@@ -42,6 +42,8 @@ body {
   padding-right: 50px;
   margin-right: auto;
   margin-left: auto;
+  height: 100vh;
+  overflow: auto;
 }
 .imgComponent .playbutton {
   width: 62px;

@@ -28,6 +28,7 @@
   box-shadow: -4px 0px 47px 5px rgba(0, 0, 0, 0.77);
   -webkit-box-shadow: -4px 0px 47px 5px rgba(0, 0, 0, 0.77);
   -moz-box-shadow: -4px 0px 47px 5px rgba(0, 0, 0, 0.77);
+  object-fit: cover;
 }
 .imgZoom:hover img {
   transform: scale(1.5);
